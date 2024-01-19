@@ -1,79 +1,101 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #FFAAEA;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-body {
-    text-align: center;
+body{
+    background-color: aqua;
 }
 
-#h1{
+.header{
+    height: 10vh;
     text-align: center;
+    background-color: #bbd0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.winnerMsz{
+    height: 100vh;
+    display: none;
+    background-color: aqua;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
 }
 
 .container{
-    height: 80vh;
-    display: flex;
-    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
     justify-content: center;
-    align-items: center;    
-}
-
-.game{
-    height: 60vmin;
-    width: 60vmin;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    margin-top: 20vh;
 }
 
 .box{
-    height: 20vmin;
-    width: 20vmin;
-    font-size: 10vmin;
-}
-
-.reset{
+    height: 100px;
+    border: 2px solid black; 
+    cursor: pointer;
+    background-color: bisque;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    font-size: 40px;
 
 }
 
-.reset-btn{
-    background-color: black;
-    color: #FFAAEA;
-    border-radius: 0.25rem;
-    font-size: 1.5rem;
+.box:hover{
+    background-color: pink;
 }
 
-.new-btn{
-    background-color: black;
-    color: #FFAAEA;
-    border-radius: 0.25rem;
-    font-size: 1.5rem;
+.result, .result1{
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 40px;
 }
 
-.hide{
-    display: none;
+.imgbox{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
 }
 
-.msz{
-    height: 8vh;
+.imgbox img{
+    height: 500px;
+  
+}
+
+.resetBtnContainer{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
 }
 
-.pa{
-    height: 2.5rem;
-    font-size: 1.5rem;
+.reset, .playagain{
+    width: 98px;
+    height: 34px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.t0{
+    border-top: 0;
+}
+
+.b0{
+    border-bottom: 0;
+}
+
+.r0{
+    border-right: 0;
+}
+
+.l0{
+    border-left: 0;
 }
