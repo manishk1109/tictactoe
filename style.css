@@ -34,7 +34,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3,100px);
     justify-content: center;
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 .box{
@@ -67,7 +67,7 @@ body{
 }
 
 .imgbox img{
-    height: 500px;
+    height: 400px;
   
 }
 
@@ -98,4 +98,22 @@ body{
 
 .l0{
     border-left: 0;
+}
+
+.scoreBoard, .turnBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.player1, .player2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
