@@ -3,31 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>tic tac</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <div class="msz hide">
-        <p class="pa">Winner</p>
-        <button class="new-btn">Reset</button></div>
+    <div class="header">
+        <h1>Tic-Tac-Toe</h1>
     </div>
-    <h1 id="h1">Tic-Tac-Toe</h1>
-    <div class="container">
-        <div class="game">
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
+
+    <div class="winnerMsz">
+        <div class="result">
+           
+        </div>
+        <div class="imgbox">
+            <img src="https://media.tenor.com/DtT8VMpkGe4AAAAi/gold-winner.gif" alt="">
+        </div>
+        <div class="resetBtnContainer">
+            <button class="playagain"> Play Again</button>
         </div>
     </div>
-    <div class="reset">
-    <button class="reset-btn">Reset</button></div>
-    <script src="ap.js"></script>
+
+    <div class="container">
+        <div class="box l0 t0"></div>
+        <div class="box t0"></div>
+        <div class="box r0 t0"></div>
+        <div class="box l0"></div>
+        <div class="box"></div>
+        <div class="box r0"></div>
+        <div class="box l0 b0"></div>
+        <div class="box b0"></div>
+        <div class="box r0 b0"></div>
+    </div>
+
+    <div class="turnBox">
+        Turn for X
+    </div>
+
+    <div class="scoreBoard">
+        
+        <div class="player1">
+            <div class="playerX">
+                Player - X
+            </div>
+            <div class="scoreX">
+                0
+            </div>
+        </div>
+        <div class="player2">
+            <div class="player0">
+                Player - 0
+            </div>
+            <div class="score0">
+                0
+            </div>
+        </div>
+           
+    </div>
+
+    
+
+    <div class="resetBtnContainer">
+        <button class="reset">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
